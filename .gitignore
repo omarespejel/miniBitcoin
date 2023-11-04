@@ -6,6 +6,7 @@ CMakeScripts/
 Testing/
 Makefile
 *.make
+_deps/
 
 # Build output directory
 build/
