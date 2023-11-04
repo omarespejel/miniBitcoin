@@ -1,0 +1,124 @@
+# CMake specific files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeScripts/
+Testing/
+Makefile
+*.make
+
+# Build output directory
+build/
+Release/
+Debug/
+*.build/
+*.cxxproj
+*.cmake
+!CMakeLists.txt
+!*.cmake.in
+
+# Compiler specific files
+*.o
+*.a
+*.so
+*.dylib
+*.lib
+*.d
+*.tlog
+*.pdb
+*.idb
+*.iobj
+*.ipch
+*.obj
+*.pch
+*.ilk
+
+# Executable and bundle files
+*.exe
+*.dll
+*.app
+*.ipa
+*.apk
+*.out
+*.i*86
+*.x86_64
+*.hex
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Editor and IDE specific files
+.vs/
+.vscode/
+*.swp
+*~
+.DS_Store
+._*
+*.sublime-workspace
+*.sublime-project
+*.idea/
+*.kdev4
+*.kdev4/
+*.qbs.user*
+*.qbs.user
+*.qbs.shared
+
+# Ignore all log, tmp, and node_modules directories
+**/log/**
+**/tmp/**
+node_modules/
+
+# OS generated files
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Ignore generated Doxygen documentation
+/html/
+/doxygen_sqlite3.db
+
+# Package manager and tooling files
+/.bzr
+/.idea
+/.git
+/.hg
+/.svn
+*.orig
+*.rej
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+
+# Exclude user-specific files
+*.user
+*.patch
+
+# Exclude specific config files
+/config.*
+
+# Exclude Markdown files (if needed)
+# *.md
+
+# Exclude LICENSE file (if needed)
+# LICENSE
+
+# Exclude specific data files
+*.csv
+*.dat
+*.db
+*.sql
+*.json
+*.xml
+
+# If using Python virtualenv, exclude the virtual environment
+/venv/
+/env/
+.pyvenv/
+
+# If there are specific scripts or binaries you don't want to include
+/bin/
+/scripts/
+
+# Dependency directories (uncomment if not using submodules or package managers)
+# /deps/
