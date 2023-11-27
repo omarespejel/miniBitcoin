@@ -10,6 +10,9 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clan
     add_compile_options(-Wall -Wextra -pedantic -Werror)
 endif()
 
+# Find OpenSSL
+find_package(OpenSSL REQUIRED)
+
 # Add the main application source files
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
@@ -21,6 +24,9 @@ add_executable(MiniBitcoin ${SOURCES})
 
 # Specify include directories
 target_include_directories(MiniBitcoin PRIVATE "${PROJECT_SOURCE_DIR}/include")
+
+# Link OpenSSL libraries
+target_link_libraries(MiniBitcoin PRIVATE OpenSSL::SSL OpenSSL::Crypto)
 
 # Assume JSONCPP is found and set up correctly
 # You may need to find the package and link against it if necessary
